@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 50vw;
+  height: 14vh;
+  background-color: rgb(85, 85, 85);
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.menu-item {
+  font-size: 30px;
+  padding: 0px 8px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item:hover {
+  background-color: black;
+}
+
+.menu-item.active {
+  background-color: green;
+}

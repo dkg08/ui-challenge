@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hambuger Icon</title>
+  </head>
+  <body>
+    <div class="container">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <script>
+      const hamburger = document.querySelector(".container");
+
+      function handleClick() {
+        if (hamburger.classList.contains("active")) {
+          hamburger.classList.remove("active");
+          return;
+        }
+        hamburger.classList.add("active");
+      }
+
+      hamburger.addEventListener("click", handleClick);
+    </script>
+  </body>
+</html>

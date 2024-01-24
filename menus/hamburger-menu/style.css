@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #555555;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+span {
+  background-color: white;
+  width: 40px;
+  height: 4px;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+
+div.active :nth-child(1) {
+  transform: rotate(45deg);
+}
+
+div.active :nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+div.active :nth-child(2) {
+  display: none;
+}
